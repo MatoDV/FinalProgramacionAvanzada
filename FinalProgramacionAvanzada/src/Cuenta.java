@@ -1,12 +1,12 @@
 public abstract class Cuenta extends Usuario implements Transaccion{
     private Integer numeroCuenta;
-    private String tipoCuenta;
+    private TipoCuenta tipoCuenta;
     private Integer pin;
     private Double saldo;
     private Usuario usuario;
     Cuenta(Integer numeroCuenta,TipoCuenta tipoCuenta,Integer pin,Double saldo,Usuario usuario){
         this.numeroCuenta=numeroCuenta;
-        this.tipoCuenta=TipoCuenta;
+        this.tipoCuenta=tipoCuenta;
         this.pin=pin;
         this.saldo=saldo;
         this.usuario=Usuario;
@@ -16,7 +16,7 @@ public abstract class Cuenta extends Usuario implements Transaccion{
         return numeroCuenta;
     }
 
-    public String getTipoCuenta() {
+    public TipoCuenta getTipoCuenta() {
         return tipoCuenta;
     }
 

@@ -6,7 +6,7 @@ public class CajaAhorro extends Cuenta{
     private Usuario usuario;
     CajaAhorro(Integer numeroCuenta,TipoCuenta tipoCuenta){
         this.numeroCuenta=numeroCuenta;
-        this.tipoCuenta=TipoCuenta;
+        this.tipoCuenta=tipoCuenta;
     }
 
     @Override
@@ -32,5 +32,25 @@ public class CajaAhorro extends Cuenta{
     @Override
     public Usuario getUsuario() {
         return usuario;
+    }
+
+    @Override
+    public Cuenta login(String numeroCuenta, String pin) {
+        return null;
+    }
+
+    @Override
+    public void depositar(Double monto) {
+
+    }
+
+    @Override
+    public void transferir(Double monto) {
+
+    }
+
+    @Override
+    public void retirar(Double monto) {
+
     }
 }

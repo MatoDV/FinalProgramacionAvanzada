@@ -5,8 +5,9 @@ public class CuentaCorriente extends Cuenta{
     private Double saldo;
     private Usuario usuario;
     CuentaCorriente(Integer numeroCuenta,TipoCuenta tipoCuenta){
+        super(numeroCuenta, tipoCuenta, pin, saldo, usuario);
         this.numeroCuenta=numeroCuenta;
-        this.tipoCuenta=TipoCuenta;
+        this.tipoCuenta=tipoCuenta;
     }
 
     @Override
@@ -32,5 +33,25 @@ public class CuentaCorriente extends Cuenta{
     @Override
     public Usuario getUsuario() {
         return usuario;
+    }
+
+    @Override
+    public Cuenta login(String numeroCuenta, String pin) {
+        return null;
+    }
+
+    @Override
+    public void depositar(Double monto) {
+
+    }
+
+    @Override
+    public void transferir(Double monto) {
+
+    }
+
+    @Override
+    public void retirar(Double monto) {
+
     }
 }

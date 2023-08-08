@@ -7,7 +7,7 @@ public class Usuario {
         this.numeroCuenta=numeroCuenta;
         this.pin=pin;
         this.correo=correo;
-        this.tipoCuenta=TipoCuenta;
+        this.tipoCuenta=tipoCuenta;
     }
 
     public String getCorreo() {
@@ -18,6 +18,6 @@ public class Usuario {
         return cuenta;
     }
     public crearCuenta(String numeroCuenta,String pin,TipoCuenta tipoCuenta){
-        return;
+        return cuenta;
     }
 }
