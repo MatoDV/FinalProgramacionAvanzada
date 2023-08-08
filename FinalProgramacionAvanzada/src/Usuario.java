@@ -18,6 +18,6 @@ public class Usuario {
         return cuenta;
     }
     public crearCuenta(String numeroCuenta,String pin,TipoCuenta tipoCuenta){
-        return cuenta;
+        return;
     }
 }

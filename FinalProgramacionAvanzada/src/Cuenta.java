@@ -5,6 +5,7 @@ public abstract class Cuenta extends Usuario implements Transaccion{
     private Double saldo;
     private Usuario usuario;
     Cuenta(Integer numeroCuenta,TipoCuenta tipoCuenta,Integer pin,Double saldo,Usuario usuario){
+        super(numeroCuenta,pin,correo,tipoCuenta);
         this.numeroCuenta=numeroCuenta;
         this.tipoCuenta=tipoCuenta;
         this.pin=pin;

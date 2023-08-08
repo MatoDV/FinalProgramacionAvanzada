@@ -5,6 +5,7 @@ public class CajaAhorro extends Cuenta{
     private Double saldo;
     private Usuario usuario;
     CajaAhorro(Integer numeroCuenta,TipoCuenta tipoCuenta){
+        super(numeroCuenta, tipoCuenta,pin,saldo,usuario);
         this.numeroCuenta=numeroCuenta;
         this.tipoCuenta=tipoCuenta;
     }
